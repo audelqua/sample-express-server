@@ -50,7 +50,7 @@ const trpcRouter = trpc.router()
             cats = cats.filter(cat => cat.id !== req.input.id);
             return "success"
         }
-    });
+    })
 
 export type Cat = z.infer<typeof Cat>;
 export type Cats = z.infer<typeof Cats>;
